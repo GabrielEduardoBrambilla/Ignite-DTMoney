@@ -1,9 +1,13 @@
-import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/default'
+import { Transaction } from './pages/Transactions'
+import { GlobalStyle } from './styles/global'
 
-function App() {
-  return <ThemeProvider theme={defaultTheme}></ThemeProvider>
+export function App() {
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <Transaction />
+      <GlobalStyle />
+    </ThemeProvider>
+  )
 }
-
-export default App
