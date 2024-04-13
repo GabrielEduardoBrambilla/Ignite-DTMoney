@@ -1,7 +1,7 @@
 import { ArrowCircleDown, ArrowCircleUp, CurrencyBtc } from 'phosphor-react'
 import { SummaryContainer, SummaryCard } from './styles'
 
-export default function Sumarry() {
+export function Summary() {
   return (
     <SummaryContainer>
       <SummaryCard className="">
